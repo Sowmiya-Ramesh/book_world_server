@@ -7,7 +7,20 @@
  - axios
  - npm install http-proxy-middleware
 
-*** json data for books
+ ## API Endpoints [to GET, PUT and POST]
+
+1. For Books
+    - /api/books [to get list and add books]
+    - /api/books/:id [to get particular book and update]
+1. For Members
+    - /api/members [to get list and add members]
+    - /api/members/:id [to get particular member and update]
+1. For Issuance
+    - /api/issuance [to get list and add issuance]
+    - /api/issuance/:id [to get particular issuance and update]
+
+
+## json sample data 
 [{
   book_id: 1,
   book_name: 'Travel around the world',
@@ -24,7 +37,7 @@
   book_publisher:'SR Publishers'
 }]
 
-{
+[{
   mem_id: {
     membership_id: 1,
     member_id: 701,
@@ -33,9 +46,9 @@
   mem_name: 'Haritha',
   mem_phone: '999999999',
   mem_email: 'h@gmail.com'
-}
+}]
 
-{
+[{
    "issuance_id": 1,
     "book_id": 1,
     "issuance_date":"2023-06-04",
@@ -43,4 +56,5 @@
     "issued_by": "SK publisher",
     "target_return_date": "2023-06-04",
     "issuance_status": "available"
-}
+}]
+

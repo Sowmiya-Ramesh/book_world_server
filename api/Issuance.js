@@ -1,5 +1,5 @@
 const express = require('express');
-const router = express.Router(); // Use express.Router() to create a router
+const router = express.Router(); 
 const Issuance = require('../model/Issuance');
 
 router.get('/', async (req, res) => {
@@ -59,4 +59,4 @@ router.put('/:id', async (req, res) => {
 
 
 
-module.exports = router; // Export the router
+module.exports = router; 
