@@ -5,7 +5,7 @@ const path = require('path');
 const app = express();
 const cors = require('cors');
 
-// Enable CORS for all routes
+// To enable CORS for all routes
 const corsOptions = {
   origin: 'http://localhost:3000',
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
@@ -19,7 +19,7 @@ connectDB();
 // Init Middleware
 app.use(express.json());
 
-// Define Routes
+// Routes
 app.use('/api/books', require('./api/Book')); // Use the exported router
 app.use('/api/members', require('./api/Member'));
 app.use('/api/issuance', require('./api/Issuance'));

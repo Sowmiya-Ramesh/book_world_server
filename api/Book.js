@@ -33,7 +33,6 @@ router.get('/:id', async (req, res) => {
             return res.status(404).json({ error: 'Book not found' });
         }
 
-        // Respond with the book data
         res.json(book);
     } catch (error) {
         console.error(error);
@@ -44,7 +43,7 @@ router.get('/:id', async (req, res) => {
 
 router.put('/:id', async (req, res) => {
     try {
-        // Validate if req.params.id is a valid ObjectId
+        // to validate if req.params.id is a valid ObjectId
         if (!mongoose.Types.ObjectId.isValid(req.params.id)) {
             return res.status(400).json({ msg: 'Invalid book ID' });
         }

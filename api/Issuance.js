@@ -27,7 +27,7 @@ const mongoose = require('mongoose');
 
 router.put('/:id', async (req, res) => {
     try {
-        // Validate if req.params.id is a valid ObjectId
+        // to validate if req.params.id is a valid ObjectId
         if (!mongoose.Types.ObjectId.isValid(req.params.id)) {
             return res.status(400).json({ msg: 'Invalid Issuance ID' });
         }
